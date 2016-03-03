@@ -141,7 +141,7 @@ public class RealmRecyclerView extends FrameLayout {
                 throw new IllegalStateException("The type attribute has to be set.");
         }
         recyclerView.setHasFixedSize(true);
-
+        recyclerView.setNestedScrollingEnabled(false);
         recyclerView.addOnScrollListener(
                 new RecyclerView.OnScrollListener() {
                     @Override
